@@ -1,0 +1,72 @@
+body {
+    all: none;
+}
+.container{
+    margin: 0px;
+    background-color: #4EA9C3;
+    /* justify-content: center; */
+    /* align-content: top; */
+   /* width: 75%; */
+    border-radius: 5px;
+    height: auto; 
+    width: auto;
+    }
+#todoBox{
+    margin: 20px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.5fr;
+    justify-items: stretch; 
+     column-gap: 5px;
+
+    }
+h1{
+      
+    text-align: center;
+padding-top: 20px;
+        color: #1736D9;
+    }
+/* ul{
+grid-column: 1/4;
+grid-row: 3/4;
+        } */
+
+input{
+grid-column: 1/2;
+border-radius: 5px;
+border-style: none;
+    } 
+.btn-primary{
+
+    grid-column: 2/3; 
+      }
+.btn-danger{
+    grid-column: 3/4;  
+}  
+        
+ul {
+    grid-column: 1/4;
+    color: #051D9D;
+    font-size: 1em;
+  margin-left: -32px;
+  
+
+}
+
+
+.trashLogo {
+    width: 20px;
+    
+}
+.done{
+    text-decoration: line-through;
+    }
+
+.remove{
+text-decoration:dotted;    
+}
+
+ @media only screen and (max-width: 768px) {
+    #container{
+        width: 90%;
+    }
+   } 
